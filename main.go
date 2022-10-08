@@ -13,7 +13,7 @@ import (
 
 func main() {
 	go startListen()
-	logrus.Info("start routing")
+	logrus.Info("start routing...")
 	{
 		sig := make(chan os.Signal, 1)
 		signal.Notify(sig, syscall.SIGTERM, syscall.SIGINT)
